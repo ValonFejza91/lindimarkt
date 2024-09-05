@@ -172,7 +172,7 @@
 
     }
     .card{
-        background-color: rgb(0, 138, 138);
+        background-color:var(--primary-color)
         ;
         border-radius: 8px;
         padding: 20px;
@@ -351,33 +351,6 @@
         
     }
 
-  /*   nav ul{
-        display: none;
-    } */
-/* 
-.sidebar{
-    display:block;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    z-index: 1100;
-    
-    
-    
-}
-.sidebar a{
-    display: flex;
-    align-items: center;
-}
-.hidebar li{
-    display:flex;
-    width: 100%;
-  
-    
-    
-    
-} */
-
 .hamburger {
     display: flex;
     align-items: center;
@@ -387,12 +360,12 @@
     z-index: 1100;
 }
 
-/* Sigurohuni që navigimi kryesor të jetë i fshehur në mobile */
+
 nav ul {
     display: none;
 }
 
-/* Sigurohuni që sidebar të shfaqet kur hapet */
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -451,10 +424,14 @@ nav ul {
         display:flex;
         flex-direction: column;
     }
-
+    .tel{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
     .kunden{
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns:2fr;
     }
 
     .card2{
