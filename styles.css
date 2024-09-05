@@ -1,0 +1,479 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+ :root{
+--primary-color:rgb(0, 138, 138);
+
+
+ }
+
+    body{
+    width: 1200px;
+    background-color: rgb(252, 251, 251);
+
+
+
+    }
+
+
+    .header{
+        display:flex;
+        width: 100%;
+       
+        
+        
+    }
+    .logo{
+       display: flex;
+        width: 150%;
+    padding: 0,10px;
+        margin-left: 40px;
+    }  
+
+    
+
+    .nav{
+    display:flex;   
+        
+    width: 150%;
+    float: right;
+    list-style: none; 
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: 10%;
+    font-weight: 300;
+    margin-bottom: 5%;
+      
+    }
+    
+   .hamburger{
+        display: none   ;
+    } 
+    nav a{
+        text-decoration: none;
+        border: 1px solid darkcyan;
+        border-radius: 5px;
+    box-shadow: 20%;
+    color: Black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    margin:5px;
+    gap: 2%;
+    cursor: pointer;
+    }
+    nav a:hover{
+    font-size: 400;
+    color: rgb(253, 249, 249);
+    background-color: cadetblue;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.9);
+    transition: ease-in-out all .4s;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        width: 120%;
+        padding-top: 40px;
+       
+    }   
+
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 20%;
+        z-index: 999px;
+        background-color: rgb(113, 106, 106);
+        backdrop-filter: blur( 50px);
+        box-shadow:-10 0 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 3%;
+
+       
+        
+    }
+    .sidebar a{
+        display:flex;
+    
+        width: 100%;
+        flex-direction: column;
+        border: 0px;
+        border-bottom: 1px solid rgb(0, 138, 138);
+       
+     
+       
+    }
+ 
+ 
+    .banner{
+    
+            animation: fadeInAnimation ease-in-out 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+    }
+    .banner img{
+        
+        width: 1000px;
+        display: flex;
+        align-items: center;
+    
+        border-radius: 8px;
+        margin-top: 5%;
+        margin-left: 5%;
+        box-sizing: border-box;
+        border-width: 1200px;
+        height: auto;
+        -webkit-box-shadow: 33px -15px 54px -14px rgba(0,0,0,0.47);
+        -moz-box-shadow: 33px -15px 54px -14px rgba(0,0,0,0.47);
+        box-shadow: 33px -15px 54px -14px rgba(0,0,0,0.47);
+    }
+    /* container */
+
+    .container{
+        display:block;
+        width: 1200px;
+        margin-left: 0%;
+        padding: 0px 0px;
+        justify-content: center;
+        margin-top: 5%;
+        background-image: url(img/mitrovica.jpg);
+    box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 8px;
+
+    }
+
+    .grid{
+        width:100%;
+        display: grid;
+    grid-template-columns: repeat(4,4fr);
+    overflow: hidden;
+        align-items: center;
+        justify-content: space-around;
+    grid-gap: 25px;
+
+
+    }
+    .card{
+        background-color: rgb(0, 138, 138);
+        ;
+        border-radius: 8px;
+        padding: 20px;
+        height: 100%;
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    
+        margin-bottom: 10px;
+    }
+    .card img{
+    border: 1px solid;
+
+    }
+
+
+    .checked{
+        color: orange;
+    }
+    .span h2{
+        padding-top: 10%;
+        color: rgb(242, 170, 170);
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+
+    .kunden{
+    
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+        height: 0 auto;
+        margin-left: 0%;
+        padding: 2px 2px;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: rgba(99, 99, 249, 0.459);
+        backface-visibility: visible;
+    box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 8px;
+        -webkit-box-shadow: -19px -11px 55px -2px rgba(0, 0, 0, 0.144);
+        -moz-box-shadow: -19px -11px 55px -2px rgba(0, 0, 0, 0.284);
+        box-shadow: -19px -11px 55px -2px rgba(0,0,0,0.47);
+    }
+
+
+    .card2{
+
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 2px;
+        overflow: hidden;
+        border: 2px solid rgb(201, 197, 197) ;
+        
+    
+
+    }
+    .card2 h3{
+        color: rgb(231, 27, 27);
+        font-weight: 400;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .card2 img{
+        width: 30%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+
+    }
+
+    .über_uns{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 1200px;
+        margin-top: 10%;
+        /* background-color: rgba(0, 0, 0, 0.114); */
+        gap:3%;
+        justify-content: space-around;
+                                        
+
+    }
+    .tel{
+        display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 4%;
+    align-items:center;
+    justify-content:center;
+
+    }
+    .tel a{
+        text-decoration: none;
+        font-family: sans-serif;
+        color: black;
+        transition: ease-in;
+    }
+    .tel a:hover{
+        transition: ease-in-out all .4s;
+        background-color:var(--primary-color);
+        border-radius: 20%;
+        color: white;
+    }
+    .iframe{
+        display: flex;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+    }
+    .scheme{
+        width: 100%;
+        padding-top: 20%;
+        margin-left: 10%;
+    }
+    .scheme span{
+        color: red;
+    }
+
+
+
+    #footes{
+        display: block;
+        padding-top: 5%;
+    }
+
+    .list{
+        display:flex;
+        height: 100px;
+        justify-content: center;
+        padding-top: 5%;    
+        gap: 5%;
+        cursor: pointer;
+        list-style: none;
+        font-family: sans-serif;
+        background-color: rgb(66, 62, 62);
+        color: white;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+    @media screen and (max-width:575px) {
+        
+    body{
+        width: 100%;
+
+    }
+
+
+
+    .header{
+        display: inline;
+        justify-content: space-between; 
+        margin: 20%;  
+    }
+
+    .logo img{
+        width: 15%;
+        position: relative;
+    }
+    
+    .banner img{
+    
+        width: 80%;
+        padding: 0px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+  /*   nav ul{
+        display: none;
+    } */
+/* 
+.sidebar{
+    display:block;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1100;
+    
+    
+    
+}
+.sidebar a{
+    display: flex;
+    align-items: center;
+}
+.hidebar li{
+    display:flex;
+    width: 100%;
+  
+    
+    
+    
+} */
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Sigurohuni që navigimi kryesor të jetë i fshehur në mobile */
+nav ul {
+    display: none;
+}
+
+/* Sigurohuni që sidebar të shfaqet kur hapet */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 1100;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+ 
+   
+    
+    
+    
+ #Produkte{
+    width: 100%;
+    display: flex;
+  
+
+ }
+    
+    
+    
+  
+
+ .grid{
+        width: 100%;
+        align-content:center;
+        display: flex;
+        flex-direction: column;
+   
+    }
+    .card{
+        width: 60%;
+        align-items: center;
+    }
+
+
+    .main{
+        display: flex;
+        width: 100%;
+
+    }
+
+    #Kontakt{
+        width: 100%;
+        display: flex;
+
+    }
+    .über_uns{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .kunden{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+
+    .card2{
+        width: 70%;
+        justify-content: center;
+        margin-left: 35%;
+    }
+    
+.iframe{
+    width: 80%;
+    height: 0 auto;
+}
+
+
+}
+
+
+
+
+
+
+
