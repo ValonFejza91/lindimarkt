@@ -28,11 +28,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 }
 
 
-/*   // Shënjestroni ikonën hamburger dhe menunë
-const hamburger = document.getElementById('hamburgermenu');
-const navMenu = document.getElementById('nav');
-
-// Shto një event listener për klikimin në ikonën hamburger
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active'); // Ndrysho klasën 'active' për të hapur/mbyllur menunë
-}); */
