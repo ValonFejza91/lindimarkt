@@ -379,7 +379,7 @@ nav ul {
     right: 0;
     width: 80%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.925);
+    background-color: rgb(255, 255, 255);
     z-index: 1100;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 
