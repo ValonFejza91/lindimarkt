@@ -439,7 +439,7 @@ nav ul {
     }
     .kunden{
         width: 100%;
-        width: auto;
+        height: 100%;
         display: flex;
         flex-direction: column;
         background-color: var(--primary-color);
@@ -449,11 +449,11 @@ nav ul {
     }
 
     .card2{
-        width: 70%;
-        justify-content: flex-start;
-        margin-left:6%;
+        width: 50%;
+       margin-left: 3%;
         border: 0px;
         border-bottom: 1px solid white;
+   
        
     }
     .card2:last-child{
