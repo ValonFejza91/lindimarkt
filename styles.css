@@ -350,6 +350,7 @@
         margin: 0 auto;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20%;
         
     }
 
@@ -437,14 +438,26 @@ nav ul {
         padding: 0;
     }
     .kunden{
-        display: grid;
-        grid-template-columns:2fr;
+        width: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        margin-bottom: 20%;
+     
+
     }
 
     .card2{
         width: 70%;
-        justify-content: center;
-        margin-left: 35%;
+        justify-content: flex-start;
+        margin-left:6%;
+        border: 0px;
+        border-bottom: 1px solid white;
+       
+    }
+    .card2:last-child{
+        border-bottom: 0px;
     }
     
 .iframe{
