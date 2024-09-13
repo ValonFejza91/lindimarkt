@@ -264,7 +264,9 @@
     }
     .tel{
         display: flex;
-        gap: 2%;
+        gap: 3%;
+        font-size:26px;
+        justify-content: space-around;
 
     }
     .tel a{
@@ -279,6 +281,7 @@
         background-color:var(--primary-color);
         border-radius: 20%;
         color: white;
+        transform: scale(2);
     }
     .iframe{
         display: flex;
