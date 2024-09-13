@@ -455,13 +455,23 @@ nav ul {
        gap: 0;
        margin-left: 3%;
         border: 0px;
-        border-bottom: 1px solid white;
+        z-index: 100%;
    
        
     }
     .card2:last-child{
         border-bottom: 0px;
+    
     }
+    .card2 p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Kufizon në 3 rreshta */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Shton tre pika për tekstin e fshehur */
+        line-height: 1.5em; /* Lartësia e rreshtit */
+        height: 4.5em; /* Përputhet me numrin e rreshtave dhe lartësinë */
+      }
     
 .iframe{
     width: 80%;
