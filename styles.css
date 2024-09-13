@@ -444,13 +444,15 @@ nav ul {
         flex-direction: column;
         background-color: var(--primary-color);
         margin-bottom: 20%;
+        border-radius: 0% ;
+
      
 
     }
 
     .card2{
         width: 50%;
-       
+       gap: 0;
        margin-left: 3%;
         border: 0px;
         border-bottom: 1px solid white;
