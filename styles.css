@@ -413,8 +413,10 @@ nav ul {
     
     
  #Produkte{
-    width: 100%;
-    display: flex;
+    width: 250px;
+    display: grid;
+    gap:20px;
+    grid-template:repeat(2,1fr);
   
 
  }
@@ -423,17 +425,6 @@ nav ul {
     
   
 
- .grid{
-        width: 100%;
-        align-content:center;
-        display: flex;
-        flex-direction: column;
-   
-    }
-    .card{
-        width: 60%;
-        align-items: center;
-    }
 
 
     .main{
@@ -469,29 +460,33 @@ nav ul {
    
     .kunden{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--primary-color);
+        background-image:url(img/mitrovica.jpg);
         margin-bottom: 20%;
         border-radius: 0%;
-
+        gap: 3%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
      
 
     }
 
     .card2{
-        width: 50%;
-       gap: 0;
-       margin-left: 3%;
-        border: 0px;
-        z-index: 100%;
+        margin-top: 5%;
+        background-color:white;
+        backface-visibility: visible;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 8px;
+        -webkit-box-shadow: -19px -11px 55px -2px rgba(0, 0, 0, 0.144);
+        -moz-box-shadow: -19px -11px 55px -2px rgba(0, 0, 0, 0.284);
+        box-shadow: -19px -11px 55px -2px rgba(0,0,0,0.47);
    
+
+        
        
     }
-    .card2:last-child{
-        border-bottom: 0px;
-    
-    }
+   
     .card2 p{
         display: -webkit-box;
         -webkit-line-clamp: 3; /* Kufizon në 3 rreshta */
@@ -503,8 +498,10 @@ nav ul {
       }
     
 .iframe{
-    width: 80%;
+    width: 85%;
+    justify-content: center;
     height: 0 auto;
+    margin-right: 2%;
 }
 
 
