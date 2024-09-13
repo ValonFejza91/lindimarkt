@@ -452,9 +452,18 @@ nav ul {
     }
     .tel{
         display: flex;
-        margin: 0;
+        font-size:30px;
+        gap: 10%;
+        margin-top:5%;
+        margin-bottom: 10%;
+        align-items: center;
+        justify-content: center;
         padding: 0;
     }
+    .tel a:hover{
+        transform: scale(2);
+    }
+   
     .kunden{
         width: 100%;
         display: flex;
