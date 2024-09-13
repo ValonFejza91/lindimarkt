@@ -310,10 +310,11 @@
     .list{
         display:flex;
         height: 100px;
-        justify-content: center;
+        justify-content:center;
+        align-items: end;
         padding-top: 5%;    
-        gap: 5%;
-        cursor: pointer;
+      
+       
         list-style: none;
         font-family: sans-serif;
         background-color: rgb(66, 62, 62);
