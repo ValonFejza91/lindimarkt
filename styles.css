@@ -413,15 +413,18 @@ nav ul {
     
     
  #Produkte{
-    width: 250px;
+    width: 100%;
     display: grid;
-    gap:20px;
-    grid-template:repeat(2,1fr);
-  
+    gap:5px;
+    grid-template:repeat(2,2fr);
+    height:auto;
+  overflow: hidden;
 
  }
     
-    
+    .grid{
+        width: 80%;
+    }
     
   
 
