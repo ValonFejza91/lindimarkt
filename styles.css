@@ -416,7 +416,7 @@ nav ul {
  #Produkte{
     width: 100%;
     display: grid;
-    gap:5px;
+    gap:3px;
     grid-template:repeat(2,2fr);
     height:auto;
   overflow: hidden;
