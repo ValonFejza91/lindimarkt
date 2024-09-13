@@ -26,5 +26,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
 }
+      
 
 
+
+
+
+/* kodi qe kam provuar per te bere scrollUp buttonin te shkoj lart dhe te mshefet */
+
+
+
+
+
+
+window.onscroll = function() {
+  scrollFunction();
+ };
+
+
+  function scrollFunction() {
+    const scrollUp =document.getElementById("scrollUp");
+
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      scrollUp.style.display = "inline";
+    } else {
+      scrollUp.style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    console.log("scrolling function called");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  
+  }
