@@ -144,7 +144,110 @@
         -moz-box-shadow: 33px -15px 54px -14px rgba(0,0,0,0.47);
         box-shadow: 33px -15px 54px -14px rgba(0,0,0,0.47);
     }
+    
+
+
+
+
+
+
+    .card-slider {
+        width: 100%; /* 100% e gjerësisë së prindit */
+        max-width: 640px; /* Kufizim për pamjet më të mëdha */
+        overflow: hidden;
+        margin-top: 10%;
+        margin: 50px auto;
+        position: relative; /* Pozicion relative për shigjetat */
+    }
+    
+    .card-container {
+        display: flex;
+        width: calc(300px * 7 + 20px * 6); /* Gjatësia e gjithsej 7 kartave me distancë ndërmjet tyre */
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .card3 {
+        width: 300px;
+        margin-right: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative; /* Sigurohemi që përshkrimi të pozicionohet sipas kartës */
+    }
+    
+    .card3 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .card3:hover .description {
+        top: 0; /* Përshkrimi do të shfaqet kur bëhet hover */
+    }
+    
+    .description {
+        position: absolute;
+        top: -100%; /* Fillon i fshehur mbi kartën */
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Sfond i errët për tekstin */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: top 0.4s ease; /* Animacion për zbritjen e përshkrimit */
+    }
+    
+    .description p {
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    /* Stili për shigjetat majtas dhe djathtas */
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 40px;
+        color: #333;
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10; /* Siguro që shigjetat janë mbi kartat */
+    }
+    
+    .left-arrow {
+        left: 10px; /* Poziciono shigjetën majtas brenda kontejnerit */
+    }
+    
+    .right-arrow {
+        right: 10px; /* Poziciono shigjetën djathtas brenda kontejnerit */
+    }
+    
+    .arrow:hover {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+    
+    
+    
+    
+    
+    
     /* container */
+
+
+
+
+
+
+
+
 
     .container{
         display:block;
@@ -161,6 +264,19 @@
     }
     #scrollUp{
         display:none;
+        position: fixed;
+        margin-left: 95%;
+        bottom: 5%;
+    
+        
+    }
+    #scrollUp:hover{
+        transform: scale(1.2);
+        z-index: 1100;
+        transition: ease-in-out all 0.3s;
+       
+      
+        
     }
 
     .grid{
@@ -253,8 +369,8 @@
 
     .über_uns{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        width: 1200px;
+        grid-template-columns: repeat(2,1fr);
+        width:100%;
         margin-top: 10%;
         /* background-color: rgba(0, 0, 0, 0.114); */
         gap:3%;
@@ -287,8 +403,12 @@
     }
     .iframe{
         display: flex;
-    padding-bottom: 5%;
-    padding-top: 5%;
+        width:500px;
+        align-items:center;
+        justify-content: center;
+      
+    margin: 0;
+    padding: auto;
 
     }
     .scheme{
@@ -519,8 +639,11 @@ nav ul {
 
 }
 .scheme{
-    display: block;
-   margin-right:50%;
+    width: 100%;
+    display: inline;
+ justify-content: center;
+ align-items: center;
+ margin:50 auto;
 }
 
 }
