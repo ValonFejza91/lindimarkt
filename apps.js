@@ -109,7 +109,7 @@ window.addEventListener('resize', updateCard3Width);
 
 // Slider automatik (ndryshon kartën çdo 2 sekonda)
 function startAutoSlide() {
-    interval = setInterval(slideCard3Right, 2000);
+    interval = setInterval(slideCard3Right, 4000);
 }
 
 // Ndal slider-in automatik kur është në hover

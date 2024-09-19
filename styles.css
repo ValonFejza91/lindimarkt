@@ -536,13 +536,16 @@ nav ul {
     grid-template:repeat(2,2fr);
     height:auto;
   overflow: hidden;
-
+    
  }
     
     .grid{
         width: 80%;
+        justify-content: center;
+        margin-left: 1%;
+        margin-right: 1%;
     }
-    
+  
   
 
 
