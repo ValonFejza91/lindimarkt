@@ -151,87 +151,82 @@
 
 
 
-    .card-slider {
-        width: 100%; /* 100% e gjerësisë së prindit */
-        max-width: 640px; /* Kufizim për pamjet më të mëdha */
-        overflow: hidden;
-        margin-top: 10%;
+  
+    
+    .slider-container {
+        position: relative;
+        width: 80%;
         margin: 50px auto;
-        position: relative; /* Pozicion relative për shigjetat */
+        overflow: hidden;
     }
     
-    .card-container {
+    .card3-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .cards3 {
         display: flex;
-        width: calc(300px * 7 + 20px * 6); /* Gjatësia e gjithsej 7 kartave me distancë ndërmjet tyre */
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.3s ease-in-out;
     }
     
     .card3 {
-        width: 300px;
+        position: relative;
+        min-width: 50%; /* 2 karta për rresht */
         margin-right: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        position: relative; /* Sigurohemi që përshkrimi të pozicionohet sipas kartës */
-    }
-    
-    .card3 img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    
-    .card3:hover .description {
-        top: 0; /* Përshkrimi do të shfaqet kur bëhet hover */
-    }
-    
-    .description {
-        position: absolute;
-        top: -100%; /* Fillon i fshehur mbi kartën */
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7); /* Sfond i errët për tekstin */
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-color: #f0f0f0;
+        padding: 20px;
         text-align: center;
-        transition: top 0.4s ease; /* Animacion për zbritjen e përshkrimit */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(144, 141, 141, 0.1);
     }
-    
-    .description p {
-        margin: 0;
-        font-size: 18px;
+    .card3 img {width: 100%; /* Imazhi mbulon plotësisht gjerësinë e kartës */
+        height: 200px; /* Lartësi fikse për imazhin */
+        object-fit: cover;
+
     }
-    
-    /* Stili për shigjetat majtas dhe djathtas */
     .arrow {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         font-size: 40px;
         color: #333;
-        cursor: pointer;
-        padding: 10px;
         background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 10; /* Siguro që shigjetat janë mbi kartat */
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
     }
     
     .left-arrow {
-        left: 10px; /* Poziciono shigjetën majtas brenda kontejnerit */
+        left: 10px;
     }
     
     .right-arrow {
-        right: 10px; /* Poziciono shigjetën djathtas brenda kontejnerit */
+        right: 10px;
     }
     
     .arrow:hover {
         background-color: rgba(255, 255, 255, 1);
     }
+    
+
+    .description {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 100px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .card3:hover .description {
+        opacity: 1;
+    }
+
     
     
     
@@ -329,7 +324,7 @@
         margin-left: 0%;
         padding: 2px 2px;
         justify-content: center;
-        margin-top: 5%;
+        margin-top: 25%;
         margin-bottom: 5%;
         background-color: rgba(99, 99, 249, 0.459);
         backface-visibility: visible;
@@ -626,7 +621,11 @@ nav ul {
         height: 4.5em; /* Përputhet me numrin e rreshtave dhe lartësinë */
       }
     
-
+      .card3 {
+        min-width: 100%; /* 1 kartë për rresht në ekran të vogël */
+        margin-right: 10px;
+    }
+}
 
 .iframe{
     display: flex;
