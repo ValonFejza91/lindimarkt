@@ -79,26 +79,48 @@ function updateCard3Width() {
 }
 
 // Funksioni për të lëvizur kartat djathtas
+// Funksioni për të shfaqur përshkrimin pas 1 sekonde
+function showDescription() {
+  // Hiq përshkrimin nga të gjitha kartat
+  document.querySelectorAll('.description').forEach(desc => {
+      desc.style.opacity = 0;
+  });
+
+  // Shfaq përshkrimin vetëm për kartën aktive pas 1 sekonde
+  setTimeout(() => {
+      const activeCard = document.querySelectorAll('.card3')[card3Index];
+      const description = activeCard.querySelector('.description');
+      description.style.opacity = 1; // Shfaq përshkrimin
+  }, 1000); // 1 sekondë vonesë
+}
+
+// Funksioni për të lëvizur kartat djathtas
 function slideCard3Right() {
-    if (card3Index < card3Count - 2) {
-        card3Index++;
-    } else {
-        card3Index = 0;
-    }
-    const translateX = -(card3Index * card3Width);
-    cards3.style.transform = `translateX(${translateX}px)`;
+  if (card3Index < card3Count - 2) {
+      card3Index++;
+  } else {
+      card3Index = 0;
+  }
+  const translateX = -(card3Index * card3Width);
+  cards3.style.transform = `translateX(${translateX}px)`;
+  showDescription(); // Shfaq përshkrimin pas ndërrimit të kartës
 }
 
 // Funksioni për të lëvizur kartat majtas
 function slideCard3Left() {
-    if (card3Index > 0) {
-        card3Index--;
-    } else {
-        card3Index = card3Count - 2;
-    }
-    const translateX = -(card3Index * card3Width);
-    cards3.style.transform = `translateX(${translateX}px)`;
+  if (card3Index > 0) {
+      card3Index--;
+  } else {
+      card3Index = card3Count - 2;
+  }
+  const translateX = -(card3Index * card3Width);
+  cards3.style.transform = `translateX(${translateX}px)`;
+  showDescription(); // Shfaq përshkrimin pas ndërrimit të kartës
 }
+
+// Nise me shfaqjen e përshkrimit për kartën e parë në fillim
+showDescription();
+
 
 // Event listeners për shigjetat
 rightArrow.addEventListener('click', slideCard3Right);
