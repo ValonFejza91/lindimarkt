@@ -261,7 +261,7 @@
     .container{
         display:block;
         width: 1300px;
-      
+      background-attachment: fixed;
         padding: 0px 0px;
         justify-content: center;
         margin-top: 5%;
