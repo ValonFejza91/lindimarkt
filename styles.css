@@ -699,7 +699,9 @@ nav ul {
  align-items: center;
  margin:50 auto;
 }
-
+.list{
+    width: 100%;
+}
 
 
 
