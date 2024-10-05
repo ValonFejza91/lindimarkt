@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L Markt</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+ 
+<script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "qCUSv93qUl63Ly03E",
+      });
+    })();
+    </script>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
 
 <header>
+   
 
      <script src="https://unpkg.com/scrollreveal@4"></script>
     <script>
@@ -210,10 +225,8 @@
 
 
 
-<div class="main">
 
     
-</div>
 
 
     
@@ -256,6 +269,7 @@
 
 <div id="Kontakt">
     <div class="über_uns">
+        
        
         <div class="iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.2550576685007!2d7.868740876125897!3d51.23279737175213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b95122e5aa38db%3A0xdad2295b1134eec2!2sLindi%20Markt!5e0!3m2!1sen!2sde!4v1712373771066!5m2!1sen!2sde" style="display: flex; width: 100%; height:85%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div class="scheme">
@@ -266,10 +280,28 @@
             <p>12:30-19.00</p><br>
             <span><h3><u> Sonntag Ruhetag</u></h3></span><br>
             
-       
+            <form onsubmit="SendMail(); return false;">
+                <label for="full_name">Name</label>
+                <input type="text" id="full_name" name="full_name" required>
+              
+                <label for="email_id">Email</label>
+                <input type="email" id="email_id" name="email_id" required>
+              
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <button type="submit">Senden</button>
+              </form>
+            
     </div>
-    </div></div>
+   
+    </div>
     
+
+    
+    </div>
+
+    <div class="lokacioni"><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47b95122e5aa38db:0xdad2295b1134eec2?sa=X&ved=1t:8290&ictx=111"> <span></span> Reichsstraße 56D, 58840 Plettenberg </a></div>
     
     <div class="tel">
         <a href="tel:023491 9144810"><i class="fa-solid fa-phone" style="color:green" ></i>  </a> 
@@ -279,8 +311,7 @@
     </div>
 
 
-
-    
+   
 
     <div class="list">
     All right reserved by LindiMarkt 
@@ -291,7 +322,8 @@
 
 <footer>
 
-    <script src="apps.js"></script>
+
+    <script src="apps.js"  defer></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -314,6 +346,8 @@ sr.reveal('.scheme',{
 
 
 </script>
+
+
 
    
 </footer>

@@ -154,11 +154,20 @@ startAutoSlide();
 
 
 
-  
+// Forms kontakt uns 
+function SendMail() {
+  var params = {
+    from_name: document.getElementById("full_name").value,  // Korrigjohet me `document`
+    email_id: document.getElementById("email_id").value,    // Korrigjohet me `document`
+    message: document.getElementById("message").value       // Korrigjohet me `document`
+  };
 
-
-
-
-
-
-
+  emailjs.send("service_xcs437j", "template_1qg8gha", params)  // Korrigjohet `emailjs`
+    .then(function(res) {
+      alert("E-Mail wurde erfolgreich gesendet! :" + res.status);  // Mesazh për sukses
+    })
+    .catch(function(error) {
+      alert("Fehler beim Senden der E-Mail: " + error);  // Kap gabimet dhe i tregon në alert
+      console.log('Error:', error);  // Printo gabimin në console për ndihmë më të mirë
+    });
+}

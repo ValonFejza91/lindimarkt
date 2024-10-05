@@ -12,7 +12,7 @@
  }
 
     body{
-    max-width: 1300px;
+    max-width: 1200px;
     background-color: rgb(252, 251, 251);
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@
     }
     .maincontainer {
     
-            max-width: 1300px; /* Kjo kufizon gjerësinë maksimale në ekrane të mëdha */
+            max-width: 1200px; /* Kjo kufizon gjerësinë maksimale në ekrane të mëdha */
             margin: 0 auto; /* Kjo e qendron përmbajtjen në qendër */
             padding: 0 20px; /* Shton pak hapësirë anash për estetikë */
           
@@ -152,7 +152,7 @@
         margin-top: 5%;
         margin-left: 5%;
         box-sizing: border-box;
-        border-width: 1300px;
+        border-width: 1200px;
         height: auto;
         -webkit-box-shadow: 33px -15px 54px -14px rgba(0,0,0,0.47);
         -moz-box-shadow: 33px -15px 54px -14px rgba(0,0,0,0.47);
@@ -194,7 +194,8 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(144, 141, 141, 0.1);
     }
-    .card3 img {width: 100%; /* Imazhi mbulon plotësisht gjerësinë e kartës */
+    .card3 img {
+        width: 100%; /* Imazhi mbulon plotësisht gjerësinë e kartës */
         height: 200px; /* Lartësi fikse për imazhin */
         object-fit: cover;
 
@@ -260,7 +261,7 @@
 
     .container{
         display:block;
-        width: 1300px;
+        width: 1200px;
       background-attachment: fixed;
         padding: 0px 0px;
         justify-content: center;
@@ -334,7 +335,7 @@
     
         display:grid;
         grid-template-columns: repeat(4,1fr);
-        width: 1300px;
+        width: 1200px;
         height: 0 auto;
         
         padding: 2px 2px;
@@ -422,6 +423,24 @@
     padding: auto;
 
     }
+.lokacioni{
+    display: flex;
+    margin-left: 5%;
+    justify-content: center;
+ 
+}
+.lokacioni a{
+    font-family: sans-serif;
+    list-style: none;
+        font-weight: 400;
+      
+        color: rgb(20, 18, 18);
+        text-decoration: none;
+        margin-top: 5%;
+        margin-left: 5%;
+}
+
+
     .scheme{
         width: 100%;
         padding-top: 20%;
@@ -433,9 +452,49 @@
 
 
 
+
+    
+    
+    .contact-form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 15%;
+    }
+    .contact-form h2{
+        display: flex;
+        justify-content: center;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #218838;
+    }
+
+
+    
+
     #footes{
        
-        width: 1300px;
+        width: 1200px;
         padding-top: 5%;
      margin: 0 auto;
     }
@@ -604,19 +663,21 @@ nav ul {
 
     }
 
-    #Kontakt{
+   /*  #Kontakt{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-      
+     
 
-    }
+    } */
     .über_uns{
        width: 80%;
         display:grid;
-        grid-template-columns: repeat(1,1fr);
-        margin: 0;
+        grid-template-rows: repeat(3, auto); 
+        row-gap: 20px;
+     
+    
     
 
     }
