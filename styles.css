@@ -627,6 +627,7 @@ nav ul {
   overflow: hidden;
   float: right;
   margin-left: 0;
+  margin-bottom: 30%;
     
  }
     
@@ -663,14 +664,14 @@ nav ul {
 
     }
 
-   /*  #Kontakt{
+  #Kontakt{
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        margin-top: 10%;
+       
      
 
-    } */
+    } 
     .über_uns{
        width: 80%;
         display:grid;
@@ -710,8 +711,10 @@ nav ul {
    
     .kunden{
         width: 100%;
+        display: block;
         background-image:url(img/mitrovica.jpg);
         margin-bottom: 20%;
+        margin-top: 20%;
         border-radius: 0%;
         gap: 3%;
         display: grid;
