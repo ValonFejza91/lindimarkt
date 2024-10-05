@@ -676,10 +676,23 @@ nav ul {
         display:grid;
         grid-template-rows: repeat(3, auto); 
         row-gap: 20px;
-     
-    
-    
 
+    }
+    .lokacioni{
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+
+    .form{
+        display:flex;
+        justify-content: center;
+    }
+    .submit_btn{
+        display: flex;
+       width: 100%;
+       align-content: center;
+        justify-content: center;
+        margin: auto 0;
     }
     .tel{
         display: flex;
