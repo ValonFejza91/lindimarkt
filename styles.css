@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding: 0;
 
 
     }
@@ -530,8 +531,9 @@
 .grid{
     width: 100%;
     display: grid;
-    grid-template-columns:repeat(2,2fr);
+    grid-template-columns:repeat(2 ,1fr);
     gap: 2px;
+    padding: 10px;
    
     
     
@@ -583,7 +585,7 @@ nav ul {
 #scrollUp{
     display:none;
     position: fixed;
-    margin-left: 5%;
+    margin-left: 90%;
     bottom: 5%;
 
     
@@ -615,6 +617,11 @@ nav ul {
    
 .container{
     width: 100%;
+    height: auto;
+  display: flex;
+  justify-content: space-around;
+  
+  
   
 
 }
@@ -622,10 +629,9 @@ nav ul {
     
  #Produkte{
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     height:auto;
-  overflow: hidden;
+
   float: right;
   margin-left: 0;
   margin-bottom: 30%;
@@ -642,10 +648,12 @@ nav ul {
   
     .card{
 
-        width: 97%; 
+     width: 100%;
+
+
        
     }
-    .card-text {
+    .card p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3; /* Kufizon në 3 rreshta */
@@ -654,8 +662,8 @@ nav ul {
       }
 
       .card img{
-        width: 100%;
-        height: auto;
+        width: 130px;
+        height: 100px;
       }
 
 
@@ -685,10 +693,18 @@ nav ul {
         padding-bottom: 15%;
     }
 
-    form{
-        display:flex;
-        justify-content: center;
-    }
+   .forma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+    width: 85%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+
+   }
+
+
     .submit_btn{
         display: flex;
        width: 100%;
