@@ -171,3 +171,16 @@ function SendMail() {
       console.log('Error:', error);  // Printo gabimin në console për ndihmë më të mirë
     });
 }
+
+
+window.onload = function() {
+  if (!localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookie-banner').style.display = 'block';
+  }
+};
+
+document.getElementById('accept-cookies').onclick = function() {
+  localStorage.setItem('cookiesAccepted', 'true');
+  document.getElementById('cookie-banner').style.display = 'none';
+};
+
